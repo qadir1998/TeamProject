@@ -1,3 +1,2 @@
-# TeamProject
-Team 2
+# Team 2 TeamProject
 Instructions for running the batFiles: 
