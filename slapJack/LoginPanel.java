@@ -58,7 +58,14 @@ public class LoginPanel extends JPanel
     // Create a panel for the buttons.
     JPanel buttonPanel = new JPanel();
     JButton submitButton = new JButton("Submit");
-    submitButton.addActionListener(lc);
+    submitButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+        	submitButton.addActionListener(null);
+        	if(e.getSource()== submitButton) {
+        		gamePanel gpanel = new gamePanel();
+        	}
+        }
+        }); 
     JButton cancelButton = new JButton("Cancel");
     cancelButton.addActionListener(lc);    
     buttonPanel.add(submitButton);
