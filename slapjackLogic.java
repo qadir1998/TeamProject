@@ -235,40 +235,62 @@ public class slapjackLogic{
 		
 		System.out.println("------------------------------------------------------");
 		
-
-			
-			//show starting hand
-			gamePanel.getPlayer1Deck();
-			gamePanel.getPlayer2Deck();
 			
 			//round 1
+	     	System.out.println("Round 1");
 			gamePanel.player1turn();
-			gamePanel.player2turn();
-		
-			//round 2
-			gamePanel.player1turn();
-			gamePanel.player2turn();
-			
-			//round 3
-			gamePanel.player1turn();
-			gamePanel.player2turn();
-			
 			gamePanel.player1JackSlap();
-			
-			//round 4
-			gamePanel.player1turn();
 			gamePanel.player2turn();
+			System.out.println("Table deck size: " + gamePanel.getTableDeckSize());
+			//show the total cards
+			gamePanel.getPlayer1Cards();
+			gamePanel.getPlayer2Cards();
+		
 			
-			gamePanel.player2JackSlap();
-			
-			//round 5
+			//round 2
+			System.out.println("\nRound 2");
 			gamePanel.player1turn();
-			gamePanel.player2JackSlap();
-			
+			gamePanel.player1JackSlap();
+			gamePanel.player2turn();
+			System.out.println("Table deck size: " + gamePanel.getTableDeckSize());
 			//show the total cards
 			gamePanel.getPlayer1Cards();
 			gamePanel.getPlayer2Cards();
 			
+			
+			
+			//round 3
+			System.out.println("\nRound 3");
+			gamePanel.player1turn();
+			gamePanel.player2turn();
+			gamePanel.player1JackSlap();
+			System.out.println("Table deck size: " + gamePanel.getTableDeckSize());
+			//show the total cards
+			gamePanel.getPlayer1Cards();
+			gamePanel.getPlayer2Cards();
+		
+			
+			
+			//round 4
+			System.out.println("\nRound 4");
+			gamePanel.player1turn();
+			gamePanel.player2turn();
+			gamePanel.player2JackSlap();
+			System.out.println("Table deck size: " + gamePanel.getTableDeckSize());
+			//show the total cards
+			gamePanel.getPlayer1Cards();
+			gamePanel.getPlayer2Cards();
+			
+			
+			//round 5
+			System.out.println("\nRound 5");
+			gamePanel.player1turn();
+			gamePanel.player2JackSlap();
+			gamePanel.player2turn();
+			System.out.println("Table deck size: " + gamePanel.getTableDeckSize());			
+			//show the total cards
+			gamePanel.getPlayer1Cards();
+			gamePanel.getPlayer2Cards();
 			System.out.println("------------------------------------------------------");
 		
 	}
