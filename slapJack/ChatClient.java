@@ -7,6 +7,7 @@ public class ChatClient extends AbstractClient
   // Private data fields for storing the GUI controllers.
   private LoginControl loginControl;
   private CreateAccountControl createAccountControl;
+  private gameControl gameControl;
 
   // Setters for the GUI controllers.
   public void setLoginControl(LoginControl loginControl)
@@ -16,6 +17,10 @@ public class ChatClient extends AbstractClient
   public void setCreateAccountControl(CreateAccountControl createAccountControl)
   {
     this.createAccountControl = createAccountControl;
+  }
+  public void setgameControl(gameControl gameControl)
+  {
+    this.gameControl = gameControl;
   }
 
   // Constructor for initializing the client with default settings.
